@@ -13,7 +13,7 @@ let package = Package(
         .executableTarget(
             name: "TextAssistant",
             dependencies: ["HotKey"],
-            path: "TextAssistant"
+            path: "Sources"
         )
     ]
 )

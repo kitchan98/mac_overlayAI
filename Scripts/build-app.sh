@@ -32,8 +32,8 @@ mkdir -p "$RESOURCES_DIR"
 cp "$BUILD_DIR/TextAssistant" "$MACOS_DIR/"
 
 # Copy resources
-cp "$PROJECT_DIR/TextAssistant/Resources/Info.plist" "$CONTENTS_DIR/"
-cp "$PROJECT_DIR/TextAssistant/Resources/AppIcon.icns" "$RESOURCES_DIR/"
+cp "$PROJECT_DIR/Sources/Resources/Info.plist" "$CONTENTS_DIR/"
+cp "$PROJECT_DIR/Sources/Resources/AppIcon.icns" "$RESOURCES_DIR/"
 
 # Create PkgInfo
 echo -n "APPL????" > "$CONTENTS_DIR/PkgInfo"

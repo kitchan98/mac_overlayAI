@@ -83,8 +83,6 @@ Drag and drop files directly into the chat:
 ### Building from Source
 
 ```bash
-cd TextAssistant
-
 # Build the app bundle
 ./Scripts/build-app.sh
 
@@ -99,7 +97,7 @@ open "dist/Text Assistant.app"
 
 After making code changes:
 
-1. Update version in `TextAssistant/Resources/Info.plist` and `Scripts/create-dmg.sh`
+1. Update version in `Sources/Resources/Info.plist` and `Scripts/create-dmg.sh`
 2. Build: `./Scripts/build-app.sh`
 3. Package: `./Scripts/create-dmg.sh`
 4. Test: `open "dist/Text Assistant.app"`
@@ -112,13 +110,14 @@ After making code changes:
 ### Project Structure
 
 ```
-TextAssistant/
 ├── Package.swift                 # Swift package manifest
+├── README.md
 ├── Scripts/
 │   ├── build-app.sh              # Builds .app bundle
 │   ├── create-dmg.sh             # Creates distributable DMG
 │   └── GenerateIcon.swift        # Generates app icon
-└── TextAssistant/
+├── dist/                         # Build output
+└── Sources/
     ├── App/
     │   └── TextAssistantApp.swift
     ├── Services/
